@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog id="idDialog">
+        <content>
+            <List id="List1" headerText=" Region Description" items="{region>/}">
+                <items>
+                    <StandardListItem type="Active" title="{region>RegionID}" description="{region>RegionDescription}" press="onClick" selected="{selected}" />
+                </items>
+            </List>
+
+            <HBox justifyContent="End" alignItems="Start">
+                <Button type="Transparent" text="ok" press="okpress" />
+                <Button type="Transparent" text="cancel" press="cancelpress" />
+            </HBox>
+        </content>
+    </Dialog>
+</core:FragmentDefinition>
